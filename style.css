@@ -1,0 +1,102 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color: rgb(26, 12, 77);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin-top: 20%;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+h2{
+    margin-top: 0px;
+    font-size: 3rem;
+}
+
+form{
+    background-color: white;
+    width: 40%;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.input_div{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    border:  none;
+    border-bottom: 2px solid purple;
+    width: 60%;
+    margin-right: 10px;
+    text-align: center;
+}
+
+form button{
+    width: 80px;
+    border-radius:15px ;
+    background-color: blueviolet;
+    color: white;
+    height: 30px;
+}
+
+form label{
+    text-align: center;
+    display: block;
+    color: black;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+#result {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.hide{
+    display: none;
+}
+
+.intro{
+    padding: 7px;
+    font-size: 20px;
+    width: 40%;
+    background-color: rgb(17, 61, 3);
+    text-align: center;
+    height: 5rem;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+@media (max-width: 750px) {
+    form {
+        width: 90%; /* Force override (use sparingly) */
+    }
+
+    .input_div{
+        width: 90%;
+    }
+    .intro {
+        width: 90%;
+    }
+    body {
+        overflow: auto; /* Allow scrolling on small screens */
+    }
+}
